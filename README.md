@@ -14,14 +14,14 @@ A single-page React application that allows users to load, view, edit, search, a
 ---------------------------------------------------------------------
 
 ## Features
-- Load and parse CSV files on the client side
+- Loading and editing of CSV files
 - Display data in a responsive, editable Material UI table
 - Filter/search rows by keyword
 - Inline editing of cell data
 - Save data and export .csv
 - Row counter
-- Column sorting
-- Optional: Row highlighting or grouping based on column values
+- Column sorting (ascending and descending orders)
+- Row highlighting based on column values
 
 ## Setup Instructions
 ### 1. Clone the Repository
