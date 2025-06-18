@@ -25,7 +25,7 @@ CSV Parsing:    PapaParse
 
 ## Setup Instructions
 ### 1. Clone the Repository
-Git clone " My Github REPO"
+Git clone "https://github.com/mushfiqur0002/csv-editor-app.git"
 
 ### 2. Install Dependencies
 -Make sure you have Node.js (v16 or later) and npm installed.
