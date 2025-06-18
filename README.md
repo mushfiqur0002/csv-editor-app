@@ -1,54 +1,50 @@
-# React + TypeScript + Vite
+# CSV to Web Applicaton
+Task:
+A single-page React application that allows users to load, view, edit, search, and simulate saving a dataset from a CSV file. This project is built using **Vite**,**React**, **Material UI** and **TypeScript**  with data processed entirely in-memory—no backend required.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+---------------------------------------------------------------------
 
-Currently, two official plugins are available:
+Final Tech Stack:
+Bundler:    	Vite	
+Framework:  	React	
+UI FrameworK:   Material UI (MUI)
+Language:       TypeScript
+CSV Parsing:    PapaParse       
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---------------------------------------------------------------------
 
-## Expanding the ESLint configuration
+## Features
+- Load and parse CSV files on the client side
+- Display data in a responsive, editable Material UI table
+- Filter/search rows by keyword
+- Inline editing of cell data
+- Save data and export .csv
+- Row counter
+- Column sorting
+- Optional: Row highlighting or grouping based on column values
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Setup Instructions
+### 1. Clone the Repository
+Git clone " My Github REPO"
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+### 2. Install Dependencies
+-Make sure you have Node.js (v16 or later) and npm installed.
+-Open Visual Studio Code inside folder "csv-editor-app"
+-Open Terminal and type: npm install
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### 3. Run the App Locally
+on the VS Code terminal type: npm run dev
+A Link will appear on console, "http://localhost:...."
+Open browser and vist: "http://localhost:...."
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+## Web App Demo
+Click the button " UPLOAD CSV", select you .csv file. The app will load the file 
+and display an interactable table. (Wait until it is loaded)
+![alt text](image.png)
+
+You can now interact with table's content direct and make chanages, **Search by Keyword**, highlite specific **Column and Value**. 
+Below the table, there is a **rows displayed counter** and lastly you can **Save Edited Data as .CSV**.
+
+
+
