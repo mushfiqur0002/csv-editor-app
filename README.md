@@ -1,4 +1,4 @@
-# CSV to Web Applicaton
+# CSV Editor Web Application
 Task:
 A single-page React application that allows users to load, view, edit, search, and simulate saving a dataset from a CSV file. This project is built using **Vite**,**React**, **Material UI** and **TypeScript**  with data processed entirely in-memory—no backend required.
 
