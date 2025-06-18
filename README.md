@@ -4,7 +4,7 @@ A single-page React application that allows users to load, view, edit, search, a
 
 ---------------------------------------------------------------------
 
-Final Tech Stack:
+## Final Tech Stack:
 - Bundler:    	  Vite	
 - Framework:  	  React	
 - UI Framework:   Material UI (MUI)
@@ -29,22 +29,22 @@ Git clone "https://github.com/mushfiqur0002/csv-editor-app.git"
 
 ### 2. Install Dependencies
 -Make sure you have Node.js (v16 or later) and npm installed.
--Open Visual Studio Code inside folder "csv-editor-app"
+-Open Visual Studio Code inside the folder "csv-editor-app"
 -Open Terminal and type: npm install
 
 ### 3. Run the App Locally
-on the VS Code terminal type: npm run dev
-A Link will appear on console, "http://localhost:...."
-Open browser and vist: "http://localhost:...."
+On the VS Code terminal, type: npm run dev
+A Link will appear on the console, "http://localhost:...."
+Open browser and visit: "http://localhost:...."
 
 
 ## Web App Demo
-Click the button " UPLOAD CSV", select you .csv file. The app will load the file 
-and display an interactable table. (Wait until it is loaded)
+Click the button " UPLOAD CSV", select your .csv file. The app will load the file 
+and display an interactive table. (Wait until it is loaded)
 ![alt text](image.png)
 
-You can now interact with table's content direct and make chanages, **Search by Keyword**, highlite specific **Column and Value**. 
-Below the table, there is a **rows displayed counter** and lastly you can **Save Edited Data as .CSV**.
+You can now interact with the table's content directly and make changes, **Search by Keyword**, highlight specific **Column and Value**. 
+Below the table, there is a **rows displayed counter** and lastly, you can **Save Edited Data as CSV**.
 
 
 
