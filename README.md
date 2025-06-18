@@ -5,11 +5,11 @@ A single-page React application that allows users to load, view, edit, search, a
 ---------------------------------------------------------------------
 
 Final Tech Stack:
-Bundler:    	Vite	
-Framework:  	React	
-UI FrameworK:   Material UI (MUI)
-Language:       TypeScript
-CSV Parsing:    PapaParse       
+- Bundler:    	  Vite	
+- Framework:  	  React	
+- UI Framework:   Material UI (MUI)
+- Language:       TypeScript
+- CSV Parsing:    PapaParse       
 
 ---------------------------------------------------------------------
 
