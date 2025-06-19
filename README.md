@@ -43,8 +43,5 @@ Click the button " UPLOAD CSV", select your .csv file. The app will load the fil
 and display an interactive table. (Wait until it is loaded)
 ![alt text](image.png)
 
-You can now interact with the table's content directly and make changes, **Search by Keyword**, highlight specific **Column and Value**. 
-Below the table, there is a **rows displayed counter** and lastly, you can **Save Edited Data as CSV**.
-
-
-
+You can now interact with the table's content directly and make changes, **Search by Keyword**, **highlight** specific Column and Value, **sort** columns ascending or descending order.
+Below the table, there is a **rows displayed counter** and lastly, you can **Save Edited Data as CSV**. The page is **fully responsive**, adapts to all the screen size.
