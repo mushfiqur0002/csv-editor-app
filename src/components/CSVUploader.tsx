@@ -6,16 +6,18 @@ interface CSVUploaderProps {
   onDataLoaded: (data: any[]) => void;
 }
 
+/* CSV File Uploader */
 const CSVUploader = ({ onDataLoaded }: CSVUploaderProps) => {
-  const handleFileChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    const file = event.target.files?.[0];
+  const handleFileChange = (event: React.ChangeEvent<HTMLInputElement>) => { // Handle file input change event
+    const file = event.target.files?.[0]; // Get the first file from the input
     if (!file) return;
 
+    // Parse CSV file
       Papa.parse(file, {
-        header: true,
-        skipEmptyLines: true,
-        worker: true,
-        complete: (results) => {
+        header: true, // Use first row as header
+        skipEmptyLines: true, // Skip empty lines
+        worker: true, // Use background parsing for performance
+        complete: (results) => { // Handle parsed data and send to parent component
           onDataLoaded(results.data);
         },
         error: (error) => {
@@ -24,7 +26,7 @@ const CSVUploader = ({ onDataLoaded }: CSVUploaderProps) => {
         }
       });
   };
-
+// Render the file upload button
   return (
     <div style={{ marginBottom: '1rem' }}>
       <Button variant="contained" component="label">

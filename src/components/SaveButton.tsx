@@ -9,9 +9,11 @@ interface SaveButtonProps {
 
 }
 
+/* Save Button Component */
 const SaveButton = ({ data, defaultFileName = "edited_data.csv" }: SaveButtonProps) => {
     const [fileName, setFileName] = useState(defaultFileName);
 
+    // Function to handle saving the CSV file
     const handleSave = () => {
         const csv = Papa.unparse(data);
         const blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });

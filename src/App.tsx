@@ -69,7 +69,7 @@ function App() {
       <Box
         component="header"
         sx={{
-          backgroundColor: '#1976d2', // MUI primary color, change as needed
+          backgroundColor: '#1976d2', // MUI primary color
           color: '#fff',
           padding: 2,
           boxShadow: 1,

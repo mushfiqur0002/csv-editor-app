@@ -11,7 +11,7 @@ import {
   TableSortLabel,
 } from "@mui/material";
 
-
+/* Data Table Props */
 interface DataTableProps {
   rows: any[];
   columns: string[];
@@ -23,6 +23,7 @@ interface DataTableProps {
   highlightValue?: string;
 }
 
+/* Editable Cell Component */
 const EditableCell = memo(
   ({
     value: initialValue,
@@ -70,6 +71,7 @@ const EditableCell = memo(
   }
 );
 
+// Memoizing EditableCell to prevent unnecessary re-renders
 const DataTable = ({
   rows,
   columns,
@@ -91,6 +93,7 @@ const DataTable = ({
   };
 
   return (
+    // Render the table with sorting and highlighting
     <TableContainer
       component={Paper}
       sx={{ mb: 2, maxHeight: "50vh", overflowY: "auto" }}
@@ -115,6 +118,7 @@ const DataTable = ({
             ))}
           </TableRow>
         </TableHead>
+        {/* Table Body */}
         <TableBody>
           {rows.map((row, rowIndex) => {
             const isHighlighted =
@@ -126,7 +130,7 @@ const DataTable = ({
               <TableRow
                 key={rowIndex}
                 sx={{
-                  backgroundColor: isHighlighted ? "rgba(255, 235, 59, 0.3)" : "inherit", // subtle yellow highlight
+                  backgroundColor: isHighlighted ? "rgba(255, 235, 59, 0.3)" : "inherit", // highlight colour
                 }}
               >
                 {columns.map((column) => (

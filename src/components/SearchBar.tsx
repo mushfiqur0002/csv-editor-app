@@ -8,6 +8,7 @@ interface SearchBarProps {
   onChange: (value: string) => void;
 }
 
+// SearchBar Component
 const SearchBar = ({ value, onChange }: SearchBarProps) => {
   const [input, setInput] = useState(value);
 
