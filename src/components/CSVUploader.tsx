@@ -16,7 +16,7 @@ const CSVUploader = ({ onDataLoaded }: CSVUploaderProps) => {
       Papa.parse(file, {
         header: true, // Use first row as header
         skipEmptyLines: true, // Skip empty lines
-        worker: true, // Use background parsing for performance
+        worker: true, // For performance
         complete: (results) => { // Handle parsed data and send to parent component
           onDataLoaded(results.data);
         },

@@ -29,9 +29,7 @@ function App() {
 
   // Filter rows based on search query
   // If searchQuery is empty, return all rows
-  // If searchQuery is set, filter rows where any column contains the query
-  // Uses useMemo to optimize performance by memoizing the filtered rows
-  const filteredRows = useMemo(() => {
+  const filteredRows = useMemo(() => { 
     if (!searchQuery.trim()) return rows
     const query = searchQuery.toLowerCase()
     return rows.filter((row) =>
@@ -43,8 +41,6 @@ function App() {
 
   // Sort rows based on sortConfig
   // If sortConfig is null, return filteredRows as is
-  // If sortConfig is set, sort filteredRows based on the specified column and direction
-  // Uses useMemo to optimize performance by memoizing the sorted rows
   const sortedRows = useMemo(() => {
     if (!sortConfig) return filteredRows
     const { column, direction } = sortConfig
